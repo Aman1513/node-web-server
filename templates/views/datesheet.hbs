@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Datesheet</title>
+        <style>
+            body{
+                background-color: orange;
+            }
+            h1{
+                text-align: center;
+                color: white;
+            }
+            table{
+                margin: 0 auto;
+            }
+            table, tr{
+                border: 1px solid white;
+                border-collapse: collapse;
+            }
+            td{
+                font-size: 18px;
+                padding: 1%;
+                width: 130px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+              {{> header}}
+        </header>
+        <h1>Exams's Datesheet</h1>
+        <table>
+            <tr>
+                <td>Date</td>
+                <td>Day</td>
+                <td>Course Code</td>
+                <td>Room No.</td>
+                <td>Exam Time</td>
+            </tr>
+            <tr>
+                <td>{{date1}}</td>
+                <td>{{day1}}</td>
+                <td>{{courseCode1}}</td>
+                <td>{{roomNo1}}</td>
+                <td>{{time1}}</td>
+            </tr>
+             <tr>
+                <td>{{date2}}</td>
+                <td>{{day2}}</td>
+                <td>{{courseCode2}}</td>
+                <td>{{roomNo2}}</td>
+                <td>{{time2}}</td>
+            </tr>
+             <tr>
+                <td>{{date3}}</td>
+                <td>{{day3}}</td>
+                <td>{{courseCode3}}</td>
+                <td>{{roomNo3}}</td>
+                <td>{{time3}}</td>
+            </tr>
+             <tr>
+                <td>{{date4}}</td>
+                <td>{{day4}}</td>
+                <td>{{courseCode4}}</td>
+                <td>{{roomNo4}}</td>
+                <td>{{time4}}</td>
+            </tr>
+             <tr>
+                <td>{{date5}}</td>
+                <td>{{day5}}</td>
+                <td>{{courseCode5}}</td>
+                <td>{{roomNo5}}</td>
+                <td>{{time5}}</td>
+            </tr>
+        </table>
+        {{> guidelines}}
+    </body>
+</html>

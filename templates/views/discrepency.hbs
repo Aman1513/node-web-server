@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Result</title>
+        <style>
+            body{
+                background-color: orange;
+            }
+            h1{
+                text-align: center;
+                color: white;
+            }
+            table{
+                margin: 0 auto;
+            }
+            table, tr{
+                border: 1px solid white;
+                border-collapse: collapse;
+            }
+            td{
+                font-size: 18px;
+                padding: 1.2%;
+                width: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+              {{> header}}
+        </header>
+        <h1>Discrepancy</h1>
+        <table>
+            <tr>
+                <td>Course Code</td>
+                <td>Discrepancy</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td>{{courseCode1}}</td>
+                <td>{{discrepency1}}</td>
+                <td>{{status1}}</td>
+            </tr>
+             <tr>
+                <td>{{courseCode2}}</td>
+                <td>{{discrepency2}}</td>
+                <td>{{status2}}</td>
+            </tr>
+             <tr>
+                <td>{{courseCode3}}</td>
+                <td>{{discrepency3}}</td>
+                <td>{{status3}}</td>
+            </tr>
+             <tr>
+                <td>{{courseCode4}}</td>
+                <td>{{discrepency4}}</td>
+                <td>{{status4}}</td>
+            </tr>
+             <tr>
+                <td>{{courseCode5}}</td>
+                <td>{{discrepency5}}</td>
+                <td>{{status5}}</td>
+            </tr>
+        </table>
+        {{> guidelines}}
+    </body>
+</html>

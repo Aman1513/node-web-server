@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Result</title>
+        <style>
+            body{
+                background-color: orange;
+            }
+            h1{
+                text-align: center;
+                color: white;
+            }
+            table{
+                margin: 0 auto;
+            }
+            table, tr{
+                border: 1px solid white;
+                border-collapse: collapse;
+            }
+            td{
+                font-size: 18px;
+                padding: 1%;
+                width: 130px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+              {{> header}}
+        </header>
+        <h1>Exam Result of Previous Term</h1>
+        <table>
+            <tr>
+                <td>Course Code</td>
+                <td>Marks</td>
+                <td>Grade</td>
+            </tr>
+            <tr>
+                <td>{{courseCode1}}</td>
+                <td>{{marks1}}</td>
+                <td>{{grade1}}</td>
+            </tr>
+             <tr>
+                <td>{{courseCode2}}</td>
+                <td>{{marks2}}</td>
+                <td>{{grade2}}</td>
+            </tr>
+             <tr>
+                <td>{{courseCode3}}</td>
+                <td>{{marks3}}</td>
+                <td>{{grade3}}</td>
+            </tr>
+             <tr>
+                <td>{{courseCode4}}</td>
+                <td>{{marks4}}</td>
+                <td>{{grade4}}</td>
+            </tr>
+             <tr>
+                <td>{{courseCode5}}</td>
+                <td>{{marks5}}</td>
+                <td>{{grade5}}</td>
+            </tr>
+        </table>
+        {{> guidelines}}
+    </body>
+</html>
